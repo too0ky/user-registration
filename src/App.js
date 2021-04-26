@@ -7,7 +7,7 @@ import Login from "./components/login";
 import SignUp from "./components/signup";
 
 function App() {
-  return (<Router>
+  return (<Router basename={process.env.PUBLIC_URL}>
     <div className="App">
   <div className="header">
     <div className="header-text"><h3 className="h3-white">Dummy Heading</h3><br></br><br></br>
