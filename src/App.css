@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  background:#f4f4f4;
+  cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+}
+
+.auth-wrapper {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  text-align: left;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  background:#f4f4f4;
+}
+
+.auth-inner {
+  margin: auto;
+  background:#f4f4f4;
+  width: 60%;
+  padding: 100px;
+  transition: all .3s;
+}
+
+.header {
+  background: rgb(0, 0, 255);
+  margin: auto;
+  position: absolute;
+  top:0;
+  right:0;
+  height: 100%;
+  width: 35%;
+}
+
+.header-text {
+  width: 250px;
+  height: auto;
+  margin: 200px 100px 100px 100px;
+  padding: 20px;
+  background: blue;
+  align-content: center;
+  
+}
+
+.h3-white {
+  font-family: 'Fira Sans', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-wrapper h3 {
+  text-align: left;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
 }
